@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <ZP_ZuPago>
+            <active>true</active>
+            <codePool>community</codePool>
+        </ZP_ZuPago>
+    </modules>
+</config>

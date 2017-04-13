@@ -1,0 +1,10 @@
+<b><?php echo Mage::helper('zupago')->__('Loading secure payment page (SSL)'); ?></b>
+<form name="zupago" id="zupago_place_form" action="<?php echo $this->getFormAction();?>" method="GET">
+</form>
+
+<script type="text/javascript">
+//<![CDATA[
+    var paymentform = document.getElementById('zupago_place_form');
+    window.onload = paymentform.submit();
+//]]>
+</script>

@@ -1,0 +1,4 @@
+To install ZuPago HyBrid (HD) Wallet payment module for magento ver 1.9.3.2
+upload contents of archive to your Magento installation directory
+and enable ZuPago HyBrid (HD) Wallet payment method in Magento administration
+control panel.
