@@ -155,7 +155,7 @@ class ZP_ZuPago_Model_Event
 				  $_POST['PAYMENT_REF'].':'.$_POST['ZUPAYEE_ACC'].':'.$_POST['ZUPAYEE_ACC_BTC'].':'.
 				  $_POST['PAYMENT_AMOUNT'].':'.$_POST['CURRENCY_TYPE'].':'.
 				  $_POST['tokan'].':'.
-				  $_POST['PAYER_ACCOUNT'].':'.$_POST['ZUPAYEE_ACC_KEY'].':'.
+				  $_POST['ZUPAYER_ACC'].':'.$_POST['ZUPAYEE_ACC_KEY'].':'.
 				  $_POST['TIMESTAMPGMT'];
 
 			$hash=$_POST['ZUPAYEE_ACC_KEY'];
