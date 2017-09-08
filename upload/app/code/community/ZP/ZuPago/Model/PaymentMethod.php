@@ -115,6 +115,7 @@ class ZP_ZuPago_Model_PaymentMethod extends Mage_Payment_Model_Method_Abstract
         $params = array(
             'ZUPAYEE_ACC'         => Mage::getStoreConfig('payment/zupago/zp_account'),
             'ZUPAYEE_ACC_BTC'         => Mage::getStoreConfig('payment/zupago/zp_acc_btc'),
+            'ZUPAYEE_ACC_BCC'         => Mage::getStoreConfig('payment/zupago/zp_acc_bcc'),
             'ZUPAYEE_ACC_KEY'         => Mage::getStoreConfig('payment/zupago/zp_api_key'),
             'ZUPAYEE_NAME'            => Mage::getStoreConfig('payment/zupago/title'),
 			      'PAYMENT_REF'            => $order_id,

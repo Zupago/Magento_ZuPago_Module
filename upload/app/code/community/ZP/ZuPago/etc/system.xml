@@ -52,6 +52,14 @@
                                         <show_in_website>1</show_in_website>
                                         <show_in_store>1</show_in_store>
                                     </zp_acc_btc>
+                        <zp_acc_bcc translate="label">
+                                        <label>Bcc Account</label>
+                                        <frontend_type>text</frontend_type>
+                                        <sort_order>4</sort_order>
+                                        <show_in_default>1</show_in_default>
+                                        <show_in_website>1</show_in_website>
+                                        <show_in_store>1</show_in_store>
+                                    </zp_acc_bcc>
                         <zp_api_key translate="label">
                             <label>API KEY</label>
                             <frontend_type>text</frontend_type>

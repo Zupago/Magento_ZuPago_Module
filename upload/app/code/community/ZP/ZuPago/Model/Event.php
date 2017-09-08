@@ -152,7 +152,7 @@ class ZP_ZuPago_Model_Event
             $params['batch_id']=(int)$_POST['tokan'];
 
 			$string=
-				  $_POST['PAYMENT_REF'].':'.$_POST['ZUPAYEE_ACC'].':'.$_POST['ZUPAYEE_ACC_BTC'].':'.
+				  $_POST['PAYMENT_REF'].':'.$_POST['ZUPAYEE_ACC'].':'.$_POST['ZUPAYEE_ACC_BTC'].':'.$_POST['ZUPAYEE_ACC_BCC'].':'.
 				  $_POST['PAYMENT_AMOUNT'].':'.$_POST['CURRENCY_TYPE'].':'.
 				  $_POST['tokan'].':'.
 				  $_POST['ZUPAYER_ACC'].':'.$_POST['ZUPAYEE_ACC_KEY'].':'.
@@ -162,7 +162,7 @@ class ZP_ZuPago_Model_Event
 
 			if($hash==$_POST['V2_HASH']){ // processing payment if only hash is valid
 
-				if($_POST['PAYMENT_AMOUNT']==$this->_order->getGrandTotal() && $_POST['ZUPAYEE_ACC']==Mage::getStoreConfig('payment/zupago/zp_account') && $_POST['ZUPAYEE_ACC_BTC']==Mage::getStoreConfig('payment/zupago/zp_acc_btc') && $_POST['CURRENCY_TYPE']==strtoupper($this->_order->getOrderCurrencyCode())){
+				if($_POST['PAYMENT_AMOUNT']==$this->_order->getGrandTotal() && $_POST['ZUPAYEE_ACC']==Mage::getStoreConfig('payment/zupago/zp_account') && $_POST['ZUPAYEE_ACC_BTC']==Mage::getStoreConfig('payment/zupago/zp_acc_btc') && $_POST['ZUPAYEE_ACC_BCC']==Mage::getStoreConfig('payment/zupago/zp_acc_bcc') && $_POST['CURRENCY_TYPE']==strtoupper($this->_order->getOrderCurrencyCode())){
 
 					$params['verified'] = 1;
 
